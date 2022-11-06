@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>What day is today?</title>
+  <meta name="description" content="A simple website that tells you what day is today.">
+  <meta name="author" content="Werino">
+
+  <meta property="og:title" content="What day is today">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A simple website that tells you what day is today.">
+
+  <link rel="icon" href="" type="image/svg+xml">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <script type="text/javascript" src="js/dynamic-favicon.js"></script>
+</head>
+
+<body>
+  <div>
+    <h1 id="day" />
+  </div>
+
+  <script>
+    document.getElementById("day").innerHTML = new Date().toLocaleString('en-us', { weekday: 'long' });
+  </script>
+</body>
+</html>
